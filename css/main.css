@@ -37,6 +37,9 @@ footer {
 table {
     border: 1px solid black;
 }
+tr:nth-child(even) {
+    background-color: #000000;
+}
 ul.posts { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
