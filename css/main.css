@@ -37,7 +37,7 @@ footer {
 table {
     border: 1px solid black;
 }
-.test tr:nth-child(2n+1) {
+ tr:nth-child(2n+1) {
     background-color: #000000;
 }
 ul.posts { 
