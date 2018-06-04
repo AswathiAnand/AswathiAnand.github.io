@@ -29,11 +29,6 @@ p {
     line-height: 1.4em;
     color: #FF0000;
 }
-table, td, th {
-      border: 1px solid black;
-    } 
-
-
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .7em;
