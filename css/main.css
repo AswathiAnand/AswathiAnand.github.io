@@ -32,6 +32,10 @@ p {
 table, td, th {
       border: 1px solid black;
     } 
+tr:nth-child(even) {
+    background-color: #000000;
+}
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: 1em;
