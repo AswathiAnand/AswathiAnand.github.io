@@ -2,9 +2,7 @@ body {
     margin: 60px auto;
     width: 70%;
 }
-	 table, td, th {
-      border: 1px solid black;
-    } 
+	
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
