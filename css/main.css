@@ -94,13 +94,26 @@ table {
     border: 1px solid black;
 }
 
-.test tr:nth-child(even) {
+.test tr:nth-child(2){
+
+background-color: #E75E41;
+}
+
+.test tr:nth-last-child(2){
+
+background-color: #E75E41;
+}
+.test tr:nth-last-of-type(1){
+
+background-color: #E75E41;
+}
+/*.test tr:nth-child(even) {
     background-color: green;
 }
 
 .test tr:nth-child(odd) {
     background-color: grey;
-}
+}*/
 
 ul.posts { 
     margin: 20px auto 40px; 
