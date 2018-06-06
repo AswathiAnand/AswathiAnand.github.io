@@ -2,7 +2,7 @@ body {
     margin: 60px auto;
     width: 70%;
 }
-nav ul, footer ul {
+nav ul > footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
@@ -49,17 +49,17 @@ ul {
 ul li {display: inline-block;}
 ul li:hover {background: #555;}
 ul li:hover ul {display: block;}
-ul li ul {
+ div>li ul {
     position: absolute;
     width: 200px;
     display: none;
 }
-ul li ul li { 
+div>ul li ul li { 
     background: #555; 
     display: block; 
 }
-ul li ul li a {display:block !important;} 
-ul li ul li:hover {background: #666;}
+div>ul li ul li a {display:block !important;} 
+div>ul li ul li:hover {background: #666;}
 
 a.ex1:hover, a.ex1:active {color: red;}
 a.ex2:hover, a.ex2:active {font-size: 150%;}
