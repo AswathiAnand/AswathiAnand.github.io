@@ -1,90 +1,14 @@
-<!DOCTYPE html>
-<html>
-	<head>
-	 <meta charset="UTF-8">
-  <meta name="description" content="Free Web tutorials">
-  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-  <meta name="author" content="xxx">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Hi</title>
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-	
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a class="ex1" href="#">Home.</a></li>
-	        	<li><a class="ex2" href="#">About</a></li>
-        		<li><a class="ex3" href="#">CV</a></li>
-        		<li><a class="ex4" href="#">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there</h1>
-				<p>This is my first attempt <a class="ex5" href="/about">Read more...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<table class="test">
-    <tr>
-        <td> Title </td>
-        <td> Price </td>
-        <td> Available </td>
-    </tr>
-    <tr>
-        <td> CSS Demystified </td>
-        <td> $29 </td>
-        <td> 16 </td>
-    </tr>
-    <tr>
-        <td> Mastering JavaScript </td>
-        <td> $35 </td>
-        <td> 10 </td>
-    </tr>
-    <tr>
-        <td> HTML5: An Introduction </td>
-        <td> $15 </td>
-        <td> 6 </td>
-    </tr>
-</table >
-<select>
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="opel">Opel</option>
-  <option value="audi">Audi</option>
-</select>
-First name: <input type="text" value="Mickey"><br>
-Last name: <input type="text" value="Mouse"><br>
-Country: <input type="text" value="Disneyland" disabled><br>
-<div>
-  <a href="#">Useless Link</a>
-  <ul>
-    <li>
-      <a href="#">Dropdown Link</a>
-      <ul>
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 2</a></li>
-        <li><a href="#">Link 3</a></li>
-      </ul>
-    </li>
-  </ul>
-</div>
-<h4>A list inside a list:</h4>
-<ul>
-  <li>Coffee</li>
-  <li>Tea
-    <ul>
-      <li>Black tea</li>
-      <li>Green tea</li>
-    </ul>
-  </li>
-  <li>Milk</li>
-</ul>
-		<footer>
-    		<ul>
-        		<li><a class="ex6" href="mailto:xxx@gmail.com">email</a></li>
-        		<li><a class="ex7" href="https://github.com/AswathiAnand">github.com/AswathiAnand</a></li>
-			</ul>
-		</footer>
-	</body>
+<!doctype html>
+<html ng-app>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <label>Name:</label>
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <hr>
+      <h1>Hello! {{yourName}}!</h1>
+    </div>
+  </body>
 </html>
