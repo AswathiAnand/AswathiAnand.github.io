@@ -10,7 +10,7 @@
        <section ng-controller="appCtrl" class="panel-body">
         <ul class="nav nav-tabs" ng-init="activeTab = 'details'">
             <li ng-class="{ active: activeTab === 'details' }">
-                <a ng-click="activeTab = 'details'" href="#">Details</a>
+                <a ng-click="myFunc()" href="#">Details</a>
             </li>
             <li ng-class="{ active: activeTab === 'options' }">
                 <a ng-click="activeTab = 'options'" href="#">Options</a>
