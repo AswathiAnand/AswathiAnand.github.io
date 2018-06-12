@@ -6,23 +6,22 @@
 <body>
     <div id="main" ng-app="testApp">
  <div ng-view></div>
+         <ul class="nav nav-pills">
+            <li ng-class="{active:tab.isSet(1)}"><a href ng-click="tab.setTab(1)">Tab 1</a></li>
+            <li ng-class="{active:tab.isSet(2)}"><a href ng-click="tab.setTab(2)">Tab 2</a></li>
+            <li ng-class="{active:tab.isSet(3)}"><a href ng-click="tab.setTab(3)">Tab 3</a></li>
+        </ul>
+        
+        <div ng-show="tab.isSet(1)">
+             <h4>Tab 1</h4>
+        </div>
+        <div ng-show="tab.isSet(2)">
+             <h4>Tab 2</h4>
+        </div>
+        <div ng-show="tab.isSet(3)">
+             <h4>Tab 3</h4>
+        </div>
     </div>
- <div ng-app>
-  <div>
-      <button ng-click="page='first'">First</button>
-      <button ng-click="page='second'">Second</button>
-  </div>
-  
-  
-  <div ng-init="page='first'"></div>
-  
-  <div ng-show="page === 'first'">
-  <h2>First</h2>
-  </div>
-  
-  <div ng-show="page === 'second'">
-  <h2>Second</h2>
-  </div>
      <script src="./lib/angular.min.js"></script>
     <script src="./lib/angular-resource.min.js"></script>
     <script src="./lib/angular-route.min.js"></script>
