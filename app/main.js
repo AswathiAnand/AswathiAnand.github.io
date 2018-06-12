@@ -4,15 +4,9 @@ console.log('beforeload');
 console.log('afterload');
 testApp.controller('appCtrl', function ($scope) {
     console.log('inside 2 cntrl');
-     testApp.config(function($routeProvider) {
-          console.log('inside 1 cntrl');
-        $routeProvider
-            .when('/', {
-                templateUrl : './pages/home.html',
-                controller  : 'mainController'
-            })
-            
-    });
+     $scope.myFunc = function() {
+        templateUrl : './pages/home.html', 
+     }
 
 });
     /*testApp.config(function($routeProvider) {
