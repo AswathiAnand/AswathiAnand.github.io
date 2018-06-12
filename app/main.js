@@ -5,7 +5,11 @@ console.log('afterload');
 testApp.controller('appCtrl', function ($scope) {
     console.log('inside 2 cntrl');
     $scope.myFunc = function() {
-        {templateUrl : './pages/home.html'};
+        $routeProvider
+            .when('/', {
+                templateUrl : './pages/home.html',
+                controller  : 'mainController'
+            })
     };
 
 });
