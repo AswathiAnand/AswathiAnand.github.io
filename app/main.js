@@ -2,7 +2,7 @@ console.log('beforeload');
     var testApp = angular.module('testApp', ['ngRoute']);
 
 console.log('afterload');
-app.controller('appCtrl', function ($scope) {
+testApp.controller('appCtrl', function ($scope) {
 
 });
     testApp.config(function($routeProvider) {
