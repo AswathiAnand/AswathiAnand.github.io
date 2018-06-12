@@ -5,6 +5,7 @@ console.log('afterload');
 testApp.controller('appCtrl', function ($scope) {
     console.log('inside 2 cntrl');
     $scope.myFunc = function() {
+        testApp.config(function($routeProvider) {
          console.log('inside fn1');
         $routeProvider
             .when('/', {
@@ -12,7 +13,9 @@ testApp.controller('appCtrl', function ($scope) {
                 controller  : 'mainController'
             })
     };
+                       
        console.log('inside fn last');
+        });
 
 });
     /*testApp.config(function($routeProvider) {
