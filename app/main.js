@@ -2,7 +2,7 @@ console.log('beforeload');
     var testApp = angular.module('testApp', ['ngRoute']);
 
 console.log('afterload');
-testApp.controller('appCtrl', function ($scope) {
+testApp.controller('tabController', function ($scope) {
     console.log('inside 2 cntrl');
 
 });
