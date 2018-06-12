@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
     <!DOCTYPE html>
     <html>
     <head>
@@ -6,12 +13,25 @@
 <body>
     <div id="main" ng-app="testApp">
  <div ng-view></div>
-   <tabset vertical="false" ng-controller='tabController'>
-        <tab a href='#/scenario/1' heading="Scenario 1" ></tab>
-        <tab a href='#/scenario/2' heading="Scenario 2"></tab>
-        <tab a href='#/scenario/3' heading="Dist as of 12/31/15"></tab>
-        <tab a href='#/scenario/4' heading="Custom Label"></tab>
-    </tabset>
+       <section ng-controller="appCtrl" class="panel-body">
+        <ul class="nav nav-tabs" ng-init="activeTab = 'details'">
+            <li ng-class="{ active: activeTab === 'details' }">
+                <a ng-click="activeTab = 'details'" href="#">Details</a>
+            </li>
+            <li ng-class="{ active: activeTab === 'options' }">
+                <a ng-click="activeTab = 'options'" href="#">Options</a>
+            </li>
+            <li ng-class="{ active: activeTab === 'other' }">
+                <a ng-click="activeTab = 'other'" href="#">Other</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane" ng-class="{ active: activeTab === 'details' }">Details tab content.</div>
+            <div class="tab-pane" ng-class="{ active: activeTab === 'options' }">Options tab content.</div>
+            <div class="tab-pane" ng-class="{ active: activeTab === 'other' }">Other tab content.</div>
+        </div>
+    </section>
     </div>
      <script src="./lib/angular.min.js"></script>
     <script src="./lib/angular-resource.min.js"></script>
