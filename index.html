@@ -8,11 +8,25 @@
  <div ng-view></div>
         <div>
 
-      <tabset #staticTabs>
-        <tab heading="Home">Home</tab>
-        <tab heading="About">About</tab>
-
-      </tabset>
+      <section ng-controller="appCtrl" class="panel-body">
+        <ul class="nav nav-tabs" ng-init="activeTab = 'details'">
+            <li ng-class="{ active: activeTab === 'details' }">
+                <a ng-click="activeTab = 'details'" href="#">Details</a>
+            </li>
+            <li ng-class="{ active: activeTab === 'options' }">
+                <a ng-click="activeTab = 'options'" href="#">Options</a>
+            </li>
+            <li ng-class="{ active: activeTab === 'other' }">
+                <a ng-click="activeTab = 'other'" href="#">Other</a>
+            </li>
+        </ul>
+ 
+        <div class="tab-content">
+            <div class="tab-pane" ng-class="{ active: activeTab === 'details' }">Details tab content.</div>
+            <div class="tab-pane" ng-class="{ active: activeTab === 'options' }">Options tab content.</div>
+            <div class="tab-pane" ng-class="{ active: activeTab === 'other' }">Other tab content.</div>
+        </div>
+    </section>
 
 </div> 	
     </div>
