@@ -6,21 +6,35 @@
 <body>
     <div id="main" ng-app="testApp">
  <div ng-view></div>
-         <ul class="nav nav-pills">
-            <li ng-class="{active:tab.isSet(1)}"><a href ng-click="tab.setTab(1)">Tab 1</a></li>
-            <li ng-class="{active:tab.isSet(2)}"><a href ng-click="tab.setTab(2)">Tab 2</a></li>
-            <li ng-class="{active:tab.isSet(3)}"><a href ng-click="tab.setTab(3)">Tab 3</a></li>
-        </ul>
-        
-        <div ng-show="tab.isSet(1)">
-             <h4>Tab 1</h4>
-        </div>
-        <div ng-show="tab.isSet(2)">
-             <h4>Tab 2</h4>
-        </div>
-        <div ng-show="tab.isSet(3)">
-             <h4>Tab 3</h4>
-        </div>
+         	<div class="col-md-2">
+  		<ul class="nav nav-pills nav-stacked">
+       	<li ng-class="{ active: isSet(1) }">
+          	<a href ng-click="setTab(1)">Home</a>
+       	</li>
+       	<li ng-class="{ active: isSet(2) }">
+          	<a href ng-click="setTab(2)">Profile</a>
+       	</li>
+       	<li ng-class="{ active: isSet(3) }">
+          	<a href ng-click="setTab(3)">Messages</a>
+       	</li>
+     	</ul>
+  	</div>
+    <div class="col-md-8">
+  		<div class="jumbotron">
+       	<div ng-show="isSet(1)">
+         	 <h1>Home page</h1>
+          	<p>Welcome to the website!</p>
+         	 <p><a class="btn btn-primary btn-lg" 			role="button">Learn more</a></p>
+        	</div>
+			<div ng-show="isSet(2)">
+          <h1>Profile page</h1>
+          <p>Profile information</p>
+     	</div>
+        <div ng-show="isSet(3)">
+          <h1>Messages</h1>
+          <p> Some messages </p>
+     	</div>
+  	</div>
     </div>
      <script src="./lib/angular.min.js"></script>
     <script src="./lib/angular-resource.min.js"></script>
