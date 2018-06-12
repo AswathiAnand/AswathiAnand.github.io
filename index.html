@@ -7,14 +7,22 @@
     <div id="main" ng-app="testApp">
  <div ng-view></div>
     </div>
-    <tabs>
-  <tab tabTitle="Tab 1">
-    Here's some content.
-  </tab>
-  <tab tabTitle="Tab 2">
-    And here's more in another tab.
-  </tab>
-</tabs>
+ <div ng-app>
+  <div>
+      <button ng-click="page='first'">First</button>
+      <button ng-click="page='second'">Second</button>
+  </div>
+  
+  
+  <div ng-init="page='first'"></div>
+  
+  <div ng-show="page === 'first'">
+  <h2>First</h2>
+  </div>
+  
+  <div ng-show="page === 'second'">
+  <h2>Second</h2>
+  </div>
      <script src="./lib/angular.min.js"></script>
     <script src="./lib/angular-resource.min.js"></script>
     <script src="./lib/angular-route.min.js"></script>
