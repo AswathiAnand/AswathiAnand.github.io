@@ -15,7 +15,7 @@ testApp.controller('appCtrl', function ($scope) {
             })
          console.log('inside fn end');
     });*/
-    };
+    });
     /*testApp.config(function($routeProvider) {
           console.log('inside 1 cntrl');
         $routeProvider
