@@ -7,6 +7,7 @@ testApp.controller('appCtrl', function ($scope) {
 
 });
     testApp.config(function($routeProvider) {
+          console.log('inside 1 cntrl');
         $routeProvider
             .when('/', {
                 templateUrl : './pages/home.html',
