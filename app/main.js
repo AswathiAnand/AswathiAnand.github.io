@@ -4,7 +4,9 @@ console.log('beforeload');
 console.log('afterload');
 testApp.controller('appCtrl', function ($scope) {
     console.log('inside 2 cntrl');
-    
+    $scope.myFunc = function() {
+      console.log('inside 3 cntrl');
+    };
 
 });
     /*testApp.config(function($routeProvider) {
