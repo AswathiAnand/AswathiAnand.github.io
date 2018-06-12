@@ -4,7 +4,7 @@ console.log('beforeload');
 console.log('afterload');
 testApp.controller('appCtrl', function ($scope) {
     console.log('inside 2 cntrl');
-   /* $scope.myFunc = function() {
+   $scope.myFunc = function() {
           console.log('inside fn first');
         testApp.config(function($routeProvider) {
           console.log('inside 1 cntrl');
@@ -14,7 +14,8 @@ testApp.controller('appCtrl', function ($scope) {
                 controller  : 'mainController'
             })
          console.log('inside fn end');
-    });*/
+    });
+   };
     });
     /*testApp.config(function($routeProvider) {
           console.log('inside 1 cntrl');
